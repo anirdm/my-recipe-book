@@ -8,7 +8,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="flex flex-col h-screen justify-between">
-                <div className="m-6">
+                <div className="mx-6 mt-6">
                     <Header />
                     <Routes>
                         <Route path='/' element={<Home />}></Route>

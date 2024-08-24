@@ -7,7 +7,7 @@ const Header = () => {
         <Link
             to='/'
         >
-            <img src="/logo.svg" alt="" className='size-24 flex-1'/>
+            <img src="/logo.svg" alt="" className='size-20 flex-1'/>
         </Link>
         
     </header>
