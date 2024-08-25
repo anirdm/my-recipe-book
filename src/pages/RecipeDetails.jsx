@@ -18,7 +18,7 @@ const RecipeDetails = () => {
                         <h4>Area: {recipe.area}</h4>
                     </div>
 
-                    <section className='flex border-xl w-96 bg-lime-400 rounded-lg text-sm justify-evenly mt-5 p-1'>
+                    <section className='flex w-96 bg-lime-400 rounded-lg text-sm justify-evenly mt-5 p-1'>
                         <div className='flex flex-col items-center'>
                             <p className='font-semibold'>Calories</p>
                             <p>{recipe.nutritionalInfo.calories}</p>

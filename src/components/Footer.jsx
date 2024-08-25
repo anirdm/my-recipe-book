@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className=' flex justify-center bg-gray-300 p-3'>
-      <span className='text-xs text-gray-700'>© 2024 MyRecipeBook by Dimi </span>
+    <footer className=' flex justify-center bg-stone-700 p-3 border-t border-t-stone-400'>
+      <span className='text-xs text-gray-200'>© 2024 MyRecipeBook by Dimi </span>
     </footer>
   )
 }

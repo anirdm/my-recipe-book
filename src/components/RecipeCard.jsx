@@ -15,7 +15,7 @@ const RecipeCard = ({ recipe }) => {
                         <h4>Area: {recipe.area}</h4>
                     </div>
 
-                    <section className='flex border-xl bg-lime-400 rounded-lg text-xs justify-evenly mt-3 p-1'>
+                    <section className='flex bg-lime-400 rounded-lg text-xs justify-evenly mt-3 p-1'>
                         <div className='flex flex-col items-center'>
                             <p className='font-semibold'>Calories</p>
                             <p>{recipe.nutritionalInfo.calories}</p>
