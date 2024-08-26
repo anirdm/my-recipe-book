@@ -6,7 +6,7 @@ const SearchCard = ({ recipe, setSearchedValue }) => {
         <Link
             to={`/${recipe.id}`}
             onClick={() => setSearchedValue('')}
-            className='flex items-center gap-3 my-3'
+            className='flex items-center gap-3 my-3 hover:bg-stone-100 rounded-xl'
         >
             <img src={recipe.image} alt="" className='w-16 rounded-xl' />
             <div>

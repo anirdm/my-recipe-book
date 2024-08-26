@@ -42,7 +42,7 @@ const Header = () => {
                 </div>
 
                 {isFocused && searchedValue && searchResults.length !== 0 && (                
-                    <div className='absolute top-full bottom-0 mt-1 px-3 bg-white h-fit w-full max-w-lg rounded-xl'>
+                    <div className='absolute top-full bottom-0 mt-1 px-3 bg-white h-fit w-full max-w-lg rounded-xl z-20'>
                         <ul>
                             {searchResults.slice(0, 4).map(recipe => (
                                 <SearchCard recipe={recipe} setSearchedValue={setSearchedValue}/>
