@@ -1,23 +1,20 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from './pages/Home'
 import RecipeDetails from './pages/RecipeDetails'
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import AdminAuth from "./pages/AdminAuth"
 import data from './mocks/data.json';
+import UserLayout from "./layouts/UserLayout"
 
 function App() {
     return (
         <BrowserRouter>
-            <div className="flex flex-col h-screen justify-between">
-                <div className="mx-6 mt-6">
-                    <Header />
-                    <Routes>
-                        <Route path='/' element={<Home data={data}/>}></Route>
-                        <Route path='/:recipeId' element={<RecipeDetails/>}></Route>
-                    </Routes>
-                </div>         
-                <Footer />
-            </div>         
+            <Routes>
+                <Route element={<UserLayout />}>
+                    <Route path='/' element={<Home data={data} />}></Route>
+                    <Route path='/:recipeId' element={<RecipeDetails />}></Route>
+                </Route>  
+                <Route path='/admin' element={<AdminAuth />}></Route>
+            </Routes>
         </BrowserRouter>
     )
 }

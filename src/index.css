@@ -4,12 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  background: rgb(222,221,220);
-  background: radial-gradient(circle, rgba(222,221,220,1) 0%, rgba(227,226,226,1) 19%, rgba(250,250,251,1) 61%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
+
+
 
 
